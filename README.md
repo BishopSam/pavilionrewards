@@ -17,6 +17,8 @@ Below is an image of the project structure
 
 ![Screenshot 2022-09-21 210822](https://user-images.githubusercontent.com/59648161/191600657-8e7bbcd5-6ece-4680-930d-9a3268b9bbc2.png)
 
+### Reusable Code
+
 Colors, app constants, fonts were all seperated into their different files under the constants folder, similarly a common widgets folder was created for widgets that are not specific to on feature.
 
 I also made use of varius reusable widgets to make my code more readable, for example take a look at the home screen 👇
