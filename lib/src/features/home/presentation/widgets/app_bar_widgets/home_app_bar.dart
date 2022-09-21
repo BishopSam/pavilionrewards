@@ -34,7 +34,7 @@ class HomeAppBar extends StatelessWidget {
                 ClipRRect(
                   borderRadius: BorderRadius.circular(Sizes.p32),
                   child: Image.asset(
-                    'assets/images/flutter_logo.png',
+                    'assets/images/profile_photo.png',
                     height: Sizes.p32,
                     width: Sizes.p32,
                   ),
@@ -61,13 +61,13 @@ class HomeAppBar extends StatelessWidget {
                 BalanceCard(
                   walletType: 'Wallet Balance',
                   walletBalance: 'N2,500',
-                  icon: Icons.wallet,
+                  assetName: 'assets/images/wallet.svg',
                 ),
                 gapW8,
                 BalanceCard(
                   walletType: 'Reward Balance',
                   walletBalance: 'N2,500',
-                  icon: Icons.monetization_on,
+                  assetName: 'assets/images/reward.svg',
                 )
               ],
             ),

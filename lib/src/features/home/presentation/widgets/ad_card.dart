@@ -13,7 +13,7 @@ class AdCard extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: Sizes.p12),
       decoration: const BoxDecoration(
         borderRadius: BorderRadius.all(
-          Radius.circular(Sizes.p12),
+          Radius.circular(Sizes.p4),
         ),
         gradient: LinearGradient(
           begin: Alignment.centerLeft,
@@ -33,7 +33,7 @@ class AdCard extends StatelessWidget {
               const Text(
                 'Congratulations!!',
                 style: TextStyle(
-                    fontFamily: kManropeBold, color: kWhiteColor, fontSize: 15),
+                    fontFamily: kManropeBold, color: kWhiteColor, fontSize: 12),
               ),
               Row(
                 children: const [
@@ -53,11 +53,10 @@ class AdCard extends StatelessWidget {
                   ),
                 ],
               ),
-              gapH12,
               OutlinedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                    minimumSize: const Size(Sizes.p60, Sizes.p32),
+                    minimumSize: const Size(Sizes.p60, Sizes.p24),
                     primary: Colors.white,
                     side: const BorderSide(color: kDarkBlueColor)),
                 child: const Text(

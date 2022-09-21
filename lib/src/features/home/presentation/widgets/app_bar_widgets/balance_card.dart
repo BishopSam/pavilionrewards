@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 import 'package:pavilion_rewards/src/constants/app_sizes.dart';
 import 'package:pavilion_rewards/src/constants/colors.dart';
@@ -9,11 +10,11 @@ class BalanceCard extends StatefulWidget {
       {Key? key,
       required this.walletType,
       required this.walletBalance,
-      required this.icon})
+      required this.assetName})
       : super(key: key);
   final String walletType;
   final String walletBalance;
-  final IconData icon;
+  final String assetName;
 
   @override
   State<BalanceCard> createState() => _BalanceCardState();
@@ -37,10 +38,15 @@ class _BalanceCardState extends State<BalanceCard> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Icon(
-              widget.icon,
-              size: Sizes.p48,
-              color: kWhiteColor,
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                vertical: Sizes.p16,
+                horizontal: Sizes.p8,
+              ),
+              child: SvgPicture.asset(
+                widget.assetName,
+                height: 28,
+              ),
             ),
             gapW4,
             Column(

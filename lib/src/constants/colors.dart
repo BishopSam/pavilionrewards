@@ -1,4 +1,3 @@
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
@@ -7,4 +6,5 @@ const kDarkBlueColor = Color(0xff0D073C);
 const kPinkColor = Color(0xffE4325A);
 const kRedColor = Color(0xffA61818);
 const kOrangeColor = Color(0xffFF5F00);
+const kLightBlueColor = Color(0xff3D348B);
 const kWhiteColor = Colors.white;
