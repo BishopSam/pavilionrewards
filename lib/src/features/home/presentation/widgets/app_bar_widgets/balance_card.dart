@@ -21,8 +21,9 @@ class BalanceCard extends StatefulWidget {
 }
 
 class _BalanceCardState extends State<BalanceCard> {
-  bool _obscure = false;
+  bool _obscure = true;
 
+  final String _obscureText = '* * * * * ';
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -63,11 +64,11 @@ class _BalanceCardState extends State<BalanceCard> {
                 Row(
                   children: [
                     Text(
-                      widget.walletBalance,
+                      _obscure ? _obscureText : widget.walletBalance,
                       style: const TextStyle(
                           fontFamily: kManropeRegular,
                           color: kWhiteColor,
-                          fontSize: 11),
+                          fontSize: 12),
                     ),
                     gapW60,
                     GestureDetector(
@@ -78,8 +79,8 @@ class _BalanceCardState extends State<BalanceCard> {
                       },
                       child: Icon(
                         _obscure
-                            ? Icons.visibility_outlined
-                            : Icons.visibility_off_outlined,
+                            ? Icons.visibility_off_outlined
+                            : Icons.visibility_outlined,
                         color: kWhiteColor,
                         size: Sizes.p16,
                       ),

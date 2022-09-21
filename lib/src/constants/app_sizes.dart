@@ -13,6 +13,7 @@ class Sizes {
   static const p52 = 52.0;
   static const p60 = 60.0;
   static const p64 = 64.0;
+  static const p80 = 80.0;
   static const p154 = 154.0;
 }
 
@@ -28,6 +29,8 @@ const gapW48 = SizedBox(width: Sizes.p48);
 const gapW52 = SizedBox(width: Sizes.p52);
 const gapW60 = SizedBox(width: Sizes.p60);
 const gapW64 = SizedBox(width: Sizes.p64);
+const gapW80 = SizedBox(width: Sizes.p80);
+const gapW154 = SizedBox(width: Sizes.p154);
 
 /// Constant gap heights
 const gapH4 = SizedBox(height: Sizes.p4);

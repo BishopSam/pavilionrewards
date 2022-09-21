@@ -60,13 +60,13 @@ class HomeAppBar extends StatelessWidget {
               children: const [
                 BalanceCard(
                   walletType: 'Wallet Balance',
-                  walletBalance: 'N2,500',
+                  walletBalance: '\$2,500',
                   assetName: 'assets/images/wallet.svg',
                 ),
                 gapW8,
                 BalanceCard(
                   walletType: 'Reward Balance',
-                  walletBalance: 'N2,500',
+                  walletBalance: '\$2,500',
                   assetName: 'assets/images/reward.svg',
                 )
               ],

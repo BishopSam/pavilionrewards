@@ -1,12 +1,21 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/material.dart';
+
+import '../../../constants/colors.dart';
+import '../../../constants/fonts.dart';
 
 class CardsScreen extends StatelessWidget {
   const CardsScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Scaffold(
+      body: Center(
+        child: Text(
+          'Cards',
+          style: TextStyle(
+              fontFamily: kManropeExtraBold, fontSize: 32, color: kBlueColor),
+        ),
+      ),
+    );
   }
 }

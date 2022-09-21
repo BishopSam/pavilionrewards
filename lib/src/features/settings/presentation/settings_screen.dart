@@ -1,12 +1,22 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
+import 'package:flutter/material.dart';
+import 'package:pavilion_rewards/src/constants/fonts.dart';
+
+import '../../../constants/colors.dart';
+
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Scaffold(
+      body: Center(
+        child: Text(
+          'Settings',
+          style: TextStyle(
+              fontFamily: kManropeExtraBold, fontSize: 32, color: kBlueColor),
+        ),
+      ),
+    );
   }
 }

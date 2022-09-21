@@ -70,6 +70,12 @@ class AdCard extends StatelessWidget {
             ],
           ),
           const Spacer(),
+          Image.asset(
+            'assets/images/gift_box.png',
+            height: Sizes.p80,
+            width: Sizes.p64,
+            fit: BoxFit.cover,
+          )
         ],
       ),
     );
