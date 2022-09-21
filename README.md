@@ -1,30 +1,34 @@
 # pavilion_rewards
 
-A new Flutter project.
+Interview Task
 
-## Getting Started
+## My Approach
 
-This project is a starting point for a Flutter application that follows the
-[simple app state management
-tutorial](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple).
+### Project Structure
+I made use of the feature first project structure to achieve the final goal, where each feature should have the following;
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Data Layer: For Communication with the backend.
+- Domain Layer: Where model classes specific to the feature are stored.
+- Presentation Layer: All widgets and screens go into this folder.
 
-## Assets
+This choice of project structure allows for seperation of concerns, reusable code and scalability.
 
-The `assets` directory houses images, fonts, and any other files you want to
-include with your application.
+Below is an image of the project structure
 
-The `assets/images` directory contains [resolution-aware
-images](https://flutter.dev/docs/development/ui/assets-and-images#resolution-aware).
+![Screenshot 2022-09-21 210822](https://user-images.githubusercontent.com/59648161/191600657-8e7bbcd5-6ece-4680-930d-9a3268b9bbc2.png)
 
-## Localization
+Colors, app constants, fonts were all seperated into their different files under the constants folder, similarly a common widgets folder was created for widgets that are not specific to on feature.
 
-This project generates localized messages based on arb files found in
-the `lib/src/localization` directory.
+I also made use of varius reusable widgets to make my code more readable, for example take a look at the home screen 👇
 
-To support additional languages, please visit the tutorial on
-[Internationalizing Flutter
-apps](https://flutter.dev/docs/development/accessibility-and-localization/internationalization)
+![Screenshot 2022-09-21 211212](https://user-images.githubusercontent.com/59648161/191601183-cc69ca9c-7e07-4e06-94e4-93f53deb12f4.png)
+
+As seen above, with less than 100 lines of code, i was able to render the complex design on figma.
+
+## End Product
+
+Below is a screen record of the end product.
+
+https://user-images.githubusercontent.com/59648161/191603286-baaacccd-7d58-42f6-bb44-fd317be7690c.mp4
+
+# Thank You!
